@@ -1,0 +1,217 @@
+
+.round{
+	padding:10px 0px 0px 0px;
+	margin:0.2em;
+	margin-left:0.6em;
+	border-radius:10px;
+	color:black;
+	display:inline-block;
+}
+
+.free{background: white;cursor:pointer;}
+
+
+/*----BS Modal scrolling FIX---*/
+.modal.modalX {
+    overflow-y:scroll;
+}
+
+    /* Important part */
+.modal-dialog{
+    overflow-y: initial !important
+}
+.modal-body{
+    /*max-height: calc(100vh - 200px);*/
+    overflow-y: auto;
+}
+/*----END BS Modal scrolling FIX---*/
+
+
+
+/*----IOS click fix---*/
+.free.close.taken{
+	cursor:pointer;}
+/*----IOS click fix---*/	
+
+	
+.tick-imag{width:6%}
+
+.taken{background:red;}
+
+.round p{ 
+text-align:center;
+border: 1px solid black;
+}	
+	
+/*----Hover over free seats---*/	
+.free :hover{
+	background:yellow;
+	cursor:pointer;
+}
+
+/*----Hover over taken seats-*/	
+.taken:hover{
+	background:pink;
+	cursor:not-allowed;
+}
+
+/*---- Hover over "Delete Loc Storage --*/	
+#deleteLocStorage:hover {cursor:pointer;}
+
+ /* Span for Reg exp errors */
+.error_req, .sp {color:red;}
+.inputZ{background:#DCDCDC;}
+
+ /* Css for datepicker form */
+.date{color:black; padding-left:0.7em; border-radius:10px;}
+
+
+
+
+ /* CSS for coming Events List Item from {Hall_Events} SQL DB */
+.event{
+	border:1px solid white; padding:1.2em; cursor:pointer;
+   -webkit-transition: all 1.5s ease;
+    -moz-transition: all 1.5s ease;
+    -o-transition: all 1.5s ease;
+     transition: all 1.5s ease;
+	 }
+.event:hover{opacity:0.8;color:red;}
+
+
+/* CSS for Past/Gone Events List Item from {Hall_Events} SQL DB */
+.event-past{
+	border:1px solid white; padding:1.2em; cursor:pointer;
+   -webkit-transition: all 1.5s ease;
+    -moz-transition: all 1.5s ease;
+    -o-transition: all 1.5s ease;
+     transition: all 1.5s ease;
+	 }
+.event-past:hover{opacity:0.8;cursor:not-allowed;}
+
+
+
+ /* CSS for IMAGE for  Past Events(which are gone) */
+.goneEvent{
+width:22%;
+position:absolute;
+left:10%;
+}
+
+
+   /*  ----------------Mobile */
+@media screen and (max-width: 460px) {   
+  .goneEvent{
+     width:40%;
+     position:absolute;
+     left:18%;top:12px;
+  }
+  
+  .ticketInfo{
+	position:absolute; top:0.6em;right:1.3em; font-size:1.5em; width:12%;}
+   
+   
+}
+/* --------------END  Mobile */
+
+
+
+/* round icon with quantity of tickets in cookie */
+.ticketInfo{
+	position:absolute; top:0.6em;right:1.3em; font-size:1.5em; width:4%;
+}
+
+  /*  ----------------Mobile */
+@media screen and (max-width: 460px) {   
+  .ticketInfo{width:8%;right:0.7em;} 
+}
+/* --------------END  Mobile */
+
+
+/* round icon with quantity of tickets in cookie */
+.badge1[data-badge]:after {
+   content:attr(data-badge);
+   position:absolute;
+   top:-10px;
+   right:-10px;
+   font-size:.7em;
+   background:green;
+   color:white;
+   width:18px;height:18px;
+   text-align:center;
+   line-height:18px;
+   border-radius:50%;
+   box-shadow:0 0 1px #333;
+}
+
+
+
+/* Icon/badge top right with quantity of tickets */
+#cookieIcon{cursor:pointer; width:97%;}
+#cookieIcon:hover{cursor:pointer;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------- OLD ------------------------------   */	
+	
+
+/* Form margins*/
+#myFormZ{
+	margin:4%;
+  }
+  
+  
+ 
+   /* Break long words not to overlap*/
+ *{
+	 word-wrap: break-word;
+ } 
+ 
+ 
+   /*  ----------------Mobile */
+@media screen and (max-width: 460px) {   
+ 
+	
+}
+/* --------------END  Mobile */
+
+.footer {
+  /* position: absolute; */
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef; /* #2ba6cb; */
+  text-align: center;
+  
+}
+
+
+
+  /* Class that sets background-image */
+.head-style{
+	color:white;
+	background-color:lavender;padding:10px;
+	background-image: url('https://image.freepik.com/vetores-gratis/fundo-azul-com-linhas-diagonais_1061-353.jpg');   /* ('../images/purple.jpg') */
+	/*text-shadow: 1px 1px 2px black, 0 0 1em red;*/ /* Shadow params */
+	/* background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%); */
+	
+	-webkit-transition: all 1.5s ease;
+    -moz-transition: all 1.5s ease;
+    -o-transition: all 1.5s ease;
+     transition: all 1.5s ease;
+}
+
